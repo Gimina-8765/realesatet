@@ -80,5 +80,10 @@ app.post("/api/chat/huggingface", async (req, res) => {
 app.use("/api/user", userRoute);
 app.use("/api/residency", residencyRoute);
 
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
+});
+
+
 // ✅ Export the app for Vercel (do NOT use app.listen)
 export default app;

@@ -44,7 +44,7 @@ app.post("/api/chat/openai", async (req, res) => {
     const reply = response.choices[0].message.content.trim();
     res.json({ reply });
   } catch (error) {
-    console.error("Error communicating with OpenAI:", error);
+    console.error("Error communicating with OpenAI:", error.response?.data || error.message);
     res.status(500).json({ error: "Failed to process the request" });
   }
 });
@@ -71,7 +71,7 @@ app.post("/api/chat/huggingface", async (req, res) => {
     const reply = response.data?.[0]?.generated_text || "Sorry, I didn't understand that.";
     res.json({ reply });
   } catch (err) {
-    console.error("Error talking to Hugging Face:", err.message);
+    console.error("Error talking to Hugging Face:", err.response?.data || err.message);
     res.status(500).json({ error: "Failed to fetch response from chatbot" });
   }
 });

@@ -1,12 +1,10 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
+    { "src": "server/index.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" }
-  ]
+    { "src": "/(.*)", "dest": "server/index.js" }
+  ],
+  "buildCommand": "yarn install && npx prisma generate"
 }

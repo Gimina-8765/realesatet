@@ -1,12 +1,8 @@
 .hero-wrapper {
-  color: rgb(0, 0, 0);
+  color: white;
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
-  background-image: url('./hero-bk.jpeg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 

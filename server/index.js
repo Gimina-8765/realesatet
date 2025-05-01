@@ -3,15 +3,15 @@ import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import axios from "axios"; // Import axios for Hugging Face API
+import axios from "axios";
 import OpenAI from "openai";
+
 import userRoute from './routes/userRoute.js';
 import { residencyRoute } from './routes/residencyRoute.js';
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -80,7 +80,5 @@ app.post("/api/chat/huggingface", async (req, res) => {
 app.use("/api/user", userRoute);
 app.use("/api/residency", residencyRoute);
 
-// Start the Server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// ✅ Export the app for Vercel (do NOT use app.listen)
+export default app;

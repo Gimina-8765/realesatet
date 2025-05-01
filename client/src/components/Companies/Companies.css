@@ -1,0 +1,35 @@
+.c-container{
+    justify-content: space-around;
+    gap: 1rem;
+}
+.c-container>img{
+    width: 9rem;
+}
+
+.c-wrapper {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.c-slider .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-slide img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.slick-dots li button:before {
+  color: #555;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 2;
+  color: #333;
+}

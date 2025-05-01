@@ -1,0 +1,761 @@
+yarn init
+yarn add cookie dotenv express express-async-handler express-oauth2-jwt-bearer nodemon prisma @prisma/client
+yarn run start
+
+npm install cors
+
+https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries
+
+54:02 residency dat sent 
+npm install express-async-handler
+52:33
+
+
+{
+  "data": {
+    "title": "beautiful house",
+    "description": "it's a great place to live",
+    "price": 1000,
+    "address": "new-address-123",  
+    "city": "new york",
+    "country": "USA",
+    "image": "dgfsfdfdkg",
+    "facilities": { "beds": 2 },
+    "userEmail": "rajupatel@gmail.com"
+  }
+}
+https://chatgpt.com/share/67ee506f-c33c-800d-9678-badfb303e3e0
+
+
+
+const index = user.bookedVisits.findIndex((visit) => visit.id === id);
+---> Explanation:
+Purpose:
+
+This line is used to find the index of a specific visit in the bookedVisits array of a user object. It checks if any visit in the array has an id that matches the given id.
+Key Components:
+
+user.bookedVisits:
+This is an array of visits associated with the user. Each element in the array is expected to be an object representing a visit.
+.findIndex():
+This is a JavaScript array method that returns the index of the first element in the array that satisfies the provided testing function.
+If no element satisfies the condition, it returns -1.
+Explanation:
+Purpose:
+
+This line is used to find the index of a specific visit in the bookedVisits array of a user object. It checks if any visit in the array has an id that matches the given id.
+Key Components:
+
+user.bookedVisits:
+This is an array of visits associated with the user. Each element in the array is expected to be an object representing a visit.
+.findIndex():
+This is a JavaScript array method that returns the index of the first element in the array that satisfies the provided testing function.
+If no element satisfies the condition, it returns -1.
+
+notes:-----
+get all bookedVisits ma id je id residency ma levni ex 67f37e7ecc0a27e2991feac3
+get all bookking :- http://localhost:8000/api/user/allBookings
+cancel booking :- http://localhost:8000/api/user/removeBooking/67f37e7ecc0a27e2991feac3    ama je user ma je id create thy hoy ma booking vists ma jyne ama objcet id je hoy aene remove krvni 
+favourites routes :- http://localhost:8000/api/user/toFav/67f37e7ecc0a27e2991feac3 amma lagbhag residey datbse id levni 
+get all favourites : - http://localhost:8000/api/user/allFav ama  me je favourites routes requet id hoy ae print thse output:- {
+  "favResidenciesID": [
+    "67f37e7ecc0a27e2991feac3",
+    "67f379dae3a4fa49b8f1f684"
+  ]
+}
+it complet after data folder import  
+
+cmd open after type comand :-
+mongoimport.exe --uri "mongodb+srv://hiteekap:cq3UMchxMKrYN3iA@cluster0.9jvrehd.mongodb.net/RealEstate" --collection Residency --type json --jsonArray --file Residency.json
+
+Explanation of flags:
+--uri: Specifies the full connection string (not --url)
+
+--collection: The name of the collection you're importing into (Residency)
+
+--type json: You're importing a .json file
+
+--jsonArray: Indicates the file is a JSON array
+
+--file: Path to the JSON file (Residency.json)
+
+complet beckend code strat front clint 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Frontend
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+yarn
+yarn add react-router-dom@v6.10
+yarn add react-query
+yarn add axios dayjs react-toastify
+yarn add react-spinners
+yarn add lodash
+yarn add @mui/icons-material @mui/material @emotion/react @emotion/styled
+yarn add react-icons
+yarn add react-leaflet@4.2.1 leaflet
+yarn add esri-leaflet-geocoder@2.3.3
+yarn add @auth0/auth0-react@2.0.1
+yarn add @mantine/core @mantine/dates @mantine/form @mantine/hooks
+yarn add @emotion/react
+------------------------------------------------------------------------------------------------------------------
+
+PS D:\> cd .\Final_project\
+PS D:\Final_project> git clone https://github.com/ZainRk/Real-Estate-website ./new-directory
+Cloning into './new-directory'...
+remote: Enumerating objects: 56, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 56 (delta 0), reused 0 (delta 0), pack-reused 32 (from 1)
+Receiving objects: 100% (56/56), 7.04 MiB | 5.92 MiB/s, done.
+PS D:\Final_project> git clone https://github.com/ZainRk/Real-Estate-website ./
+fatal: destination path '.' already exists and is not an empty directory.
+PS D:\Final_project> cd .\FullStack_realestate\
+PS D:\Final_project\FullStack_realestate> cd .\client\
+PS D:\Final_project\FullStack_realestate\client> git clone https://github.com/ZainRk/Real-Estate-website ./
+Cloning into '.'...
+remote: Enumerating objects: 56, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 56 (delta 0), reused 0 (delta 0), pack-reused 32 (from 1)
+Receiving objects: 100% (56/56), 7.04 MiB | 5.93 MiB/s, done.
+
+
+
+cd client 
+git clone https://github.com/ZainRk/Real-Estate-website ./
+yarn
+yarn run dev
+
+khani twist he bro ae gihub potanu projct bnvu uplood krvno ae iport kre 6 a bijo viodes 6 front ae bnve ipomt krvnu pchi thse am agr poejct okk
+
+
+
+a css je niche 6 ane hero section mate use the 
+
+.hero-wrapper {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+  background-image: url('/backgruond.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+.hero-wrapper {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+}
+
+
+
+yarn add react-router-dom@v6.10.
+
+    <Suspense fallback={<div>Loading...</div>}> this lien means input html css time cosuming more they given clinet side this messge clinet wait for website Loading
+
+sreach bar past into hero section 
+proprties section pages add into navbar hader section
+propeties navbar connte into residecne jsx file  
+
+
+
+.properties-container {
+  display: flex; /* Ensure the container uses flexbox */
+  flex-direction: column; /* Stack child elements vertically */
+  gap: 2rem; /* Add vertical spacing between child elements */
+  background-color: var(--light-gray); /* Optional: Add a background color */
+  padding: 2rem; /* Add padding inside the container */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  margin-top: 2rem; /* Add space between the header and the container */
+}
+
+proprtites.css
+
+
+yarn add react-query
+yarn add axios dayjs react-toastify
+
+client\src\utils\api.js api.js file patrh ma baceknd jiont kriye chioye propitey page metenu ok
+yarn add react-spinners
+
+yarn add react-spinners
+
+client\src\pages\Properties\Properties.jsx tyhis file <div className='paddings flexCenter properties'>
+          {
+            data.map((card, i)=>(<PropertyCard card={card} key={i}/>))
+          }
+
+        </div> this code addd propitesy card into code 
+
+
+yarn add lodash
+
+makes 2:25:00 property page jiont app.jsx file rouye thery
+
+client\src\components\PropertyCard\PropertyCard.jsx this file add prorties card clikble  <div className="flexColStart r-card" 
+    onClick={()=> navigate(`../Properties/${card.id}`)} // Navigate to the property details page when the card is clicked
+    >
+
+
+
+
+
+export default Property
+
+
+.property-container {
+    gap: 2rem;
+    position: relative;
+}
+
+.property-container .like{
+    position: absolute;
+    top: 3rem;
+    cursor: pointer;
+}
+
+.property-container>img{
+    align-self: center;
+    max-height: 35rem;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+
+yarn add @mui/icons-material @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material @mui/material @emotion/react @emotion/styled
+
+npm install react-icons 
+a run krvje icon mate
+
+2:55:00 start map adding into page 
+yarn add react-leaflet@4.2.1 leaflet
+
+https://react-leaflet.js.org/
+webiste map 
+
+GeoCoderMarker  ae compont file map vli file cont krvnu
+yarn add esri-leaflet-geocoder@2.3.3
+
+-------------------------------------------------------------------------------------
+
+3:08:05 authenication
+
+yarn add @auth0/auth0-react@2.0.1
+
+client\src\main.jsx main jsx file 
+
+authni ction login button header section add loginWithRedirect
+pchi  login button upr click kara oprn thse login into website 
+
+
+yarn add @mantine/core @mantine/dates @mantine/form @mantine/hooks
+
+3:19:41
+https://mantine.dev/ 
+
+To install Auth0 in your code, you can use the following command:
+yarn add @auth0/auth0-react@2.0.1
+visit this website
+
+3:22:23 
+yarn add @emotion/react
+
+solve it error
+3:28:23  jiont authenication paart  jiont layout,jsx file 
+3:30:33 ma app.js file ma 
+
+3:34:19 makes sersver side auth0congjg d=file 
+for user loging not flas condition 
+ ane file ne jwchek nr rouse ni fileuser rout 1 line middleware trike use thy 6
+ 3:36 :35 ae pcha layout jsx file ma javnu 
+
+ {
+    "access_token": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiaXNzIjoiaHR0cHM6Ly9kZXYtZHNkbGFvaGdnb3gyYTdpZy51cy5hdXRoMC5jb20vIn0..vcT3BfD6Vb4mLMh4.YpD8_0UAESCPF9LE7MBm5TD-evS0awljpta_msZwaUZtSqUC8KzCUEPuh0P303nxrdpxeoaMJvD57Zi49ReHbEnsSybdtR34ij_VHhRxVpoNh271AtcieecjERoniG16CPZmkEXtuIzJ0cqtaNn-M80pfzssceJL0McY4-6QWUMkFRNoCjZKfK6ffacBVane7iSW4E800Ut8BV0FrjY0Z5QdbR55-VWkSscSog0X9nW6BYnNtELEPUorZ4mPOyZki-fypuQQmtaCg_EOUYq74xo2UKduy_TiQq6MHIUbVmCGWJPbduvr-cuWJiNkJ27vmfre25wLVRKCSfdlgYhOFCU3djxxcXw.25ELKQ5WJf1wiz44s1Zv4Q",
+    "id_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlRMR0xFOWo4b3pOckNCcFBBY29hWiJ9.eyJnaXZlbl9uYW1lIjoiaGl0ZWVrYSIsImZhbWlseV9uYW1lIjoicHJhamFwYXRpIiwibmlja25hbWUiOiJoaXRlZWthcCIsIm5hbWUiOiJoaXRlZWthIHByYWphcGF0aSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NJTFAxdEJibjBIMlAyUFp1YjVUMzB5QzhVanR6ZTYzbVRLMVFNYmNKdC0tbVFiLVE9czk2LWMiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNC0xOFQwNToxNjoyMi41ODFaIiwiZW1haWwiOiJoaXRlZWthcEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9kZXYtZHNkbGFvaGdnb3gyYTdpZy51cy5hdXRoMC5jb20vIiwiYXVkIjoiVkhIbUVnUm5GY3JUMW56T2NIRndac3A5ekhpcU8zREMiLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMTc0MzcyNjgwMDEwMDIyMzcwOCIsImlhdCI6MTc0NDk1MzQ1NCwiZXhwIjoxNzQ0OTg5NDU0LCJzaWQiOiJzR2h0ZHJwVC1VMHdLNDdJZE85NmJlODhKYTZyWVBFVCIsIm5vbmNlIjoiUW01MWJqVkZXbmhTUjJaWVdtWkNUelk0Y2toM1RISk5ZMWRRWDAxNWNVWnNSR3hyWlVaNE5HRTFNZz09In0.MhhkK4BBci2nMHVVC_0923DN2HK4WeaKypTJumpskGmLb1Y7ozVyFL4Pa2UF5LWhwP813bp1xuMFZVzwbgV3RrT1dZ4GaWRfyvsp4ZkBT8ox6hlWIa9SNJQBKV6D-t-hNGSR4AjGu-4DsHIZcmUGrW29jR1mX1urcRDTH27E4nsljv-TCQI9YmKJPd4WTPdA6L0ouwRdHCteAkF2GfFAPMiM_SUTBk4sLcBJghkM6kwr2CfIp1NILx5uDMNI3Fvdd_ULIdIbTUuiC3u4xYqS6ysUNuew1IfxsWm10pj22rMGdCROoZcx34MivB06UmHGSyXs4ZH7dTRL2qC_CXVUqw",
+    "scope": "openid profile email",
+    "expires_in": 86400,
+    "token_type": "Bearer"
+}
+
+access_token
+: 
+"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwiaXNzIjoiaHR0cHM6Ly9kZXYtZHNkbGFvaGdnb3gyYTdpZy51cy5hdXRoMC5jb20vIn0..vcT3BfD6Vb4mLMh4.YpD8_0UAESCPF9LE7MBm5TD-evS0awljpta_msZwaUZtSqUC8KzCUEPuh0P303nxrdpxeoaMJvD57Zi49ReHbEnsSybdtR34ij_VHhRxVpoNh271AtcieecjERoniG16CPZmkEXtuIzJ0cqtaNn-M80pfzssceJL0McY4-6QWUMkFRNoCjZKfK6ffacBVane7iSW4E800Ut8BV0FrjY0Z5QdbR55-VWkSscSog0X9nW6BYnNtELEPUorZ4mPOyZki-fypuQQmtaCg_EOUYq74xo2UKduy_TiQq6MHIUbVmCGWJPbduvr-cuWJiNkJ27vmfre25wLVRKCSfdlgYhOFCU3djxxcXw.25ELKQ5WJf1wiz44s1Zv4Q"
+expires_in
+: 
+86400
+id_token
+: 
+"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlRMR0xFOWo4b3pOckNCcFBBY29hWiJ9.eyJnaXZlbl9uYW1lIjoiaGl0ZWVrYSIsImZhbWlseV9uYW1lIjoicHJhamFwYXRpIiwibmlja25hbWUiOiJoaXRlZWthcCIsIm5hbWUiOiJoaXRlZWthIHByYWphcGF0aSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NJTFAxdEJibjBIMlAyUFp1YjVUMzB5QzhVanR6ZTYzbVRLMVFNYmNKdC0tbVFiLVE9czk2LWMiLCJ1cGRhdGVkX2F0IjoiMjAyNS0wNC0xOFQwNToxNjoyMi41ODFaIiwiZW1haWwiOiJoaXRlZWthcEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9kZXYtZHNkbGFvaGdnb3gyYTdpZy51cy5hdXRoMC5jb20vIiwiYXVkIjoiVkhIbUVnUm5GY3JUMW56T2NIRndac3A5ekhpcU8zREMiLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMTc0MzcyNjgwMDEwMDIyMzcwOCIsImlhdCI6MTc0NDk1MzQ1NCwiZXhwIjoxNzQ0OTg5NDU0LCJzaWQiOiJzR2h0ZHJwVC1VMHdLNDdJZE85NmJlODhKYTZyWVBFVCIsIm5vbmNlIjoiUW01MWJqVkZXbmhTUjJaWVdtWkNUelk0Y2toM1RISk5ZMWRRWDAxNWNVWnNSR3hyWlVaNE5HRTFNZz09In0.MhhkK4BBci2nMHVVC_0923DN2HK4WeaKypTJumpskGmLb1Y7ozVyFL4Pa2UF5LWhwP813bp1xuMFZVzwbgV3RrT1dZ4GaWRfyvsp4ZkBT8ox6hlWIa9SNJQBKV6D-t-hNGSR4AjGu-4DsHIZcmUGrW29jR1mX1urcRDTH27E4nsljv-TCQI9YmKJPd4WTPdA6L0ouwRdHCteAkF2GfFAPMiM_SUTBk4sLcBJghkM6kwr2CfIp1NILx5uDMNI3Fvdd_ULIdIbTUuiC3u4xYqS6ysUNuew1IfxsWm10pj22rMGdCROoZcx34MivB06UmHGSyXs4ZH7dTRL2qC_CXVUqw"
+scope
+: 
+"openid profile email"
+token_type
+: 
+"Bearer"
+
+:45 complt ah=thunictaion part 
+-------------------------------------------------------------------------------------------------------
+
+node modlu file install krva 
+npm install --legacy-peer-deps
+npm install --force
+
+
+yarn install
+npm run dev
+--------------------------------------------------------------------------------------------------------------
+ 
+ 4:00:1 cancel booking part strating property.jsx file buuton part add heart file working
+  pchi 4:22 cutomer hook ma phel afrvatuoit cilke vadhre time sudhi rhe ani file bnvi hook ma fravrtious ni 
+
+  4:25 makes getAllfav datbse conet fravpropeites conteion int file 
+
+  4:48:36 makes add loctio.jsx file after coman js fiele ad and after add useCountries file makes add code 
+
+  yarn add world-countries
+
+
+  import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import "./Footer.css";
+
+const Footer = () => {
+  return (
+    <div className="f-wrapper">
+      <div className="paddings innerWidth flexCenter f-container">
+        {/* left side */}
+        <div className="flexColStart f-left">
+          <img src="./logo2.png" alt="" width={120} />
+          <span className="secondaryText">
+            Our vision is to make all people <br />
+            the best place to live for them.
+          </span>
+        </div>
+
+        {/* right side */}
+        <div className="flexColStart f-right">
+          <span className="primaryText">Information</span>
+          <span className="secondaryText">145 New York, FL 5467, USA</span>
+          <div className="flexCenter f-menu">
+            <Link to="/property">Property</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/product">Product</Link>
+            <Link to="/about">About Us</Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
+ footer section link page 
+
+
+ import React from "react";
+import { motion } from "framer-motion"; // Import motion from framer-motion
+import "./About.css";
+
+const About = () => {
+  return (
+    <section className="about-wrapper">
+      <div className="innerWidth about-container">
+        <h1 className="about-title">About Us</h1>
+        {/* Page Title */}
+        <motion.h1
+          className="about-page-title"
+          initial={{ y: "-2rem", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1.5,
+            type: "ease-in-out",
+          }}
+        >
+        </motion.h1>
+
+        <div className="about-content">
+          {/* Left Side: Image with Motion */}
+          <motion.div
+            className="about-image-container"
+            initial={{ x: "-2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              type: "ease-in-out",
+            }}
+          >
+            <img
+              src="./hero-image.png" // Replace with your image path
+              alt="Discover"
+              className="about-image rounded-top"
+            />
+          </motion.div>
+
+          {/* Right Side: Text Content with Motion */}
+          <motion.div
+            className="about-text-container"
+            initial={{ x: "2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              type: "ease-in-out",
+            }}
+          >
+            <h2 className="about-title">Our Value</h2>
+            <h1 className="about-heading">Value We Give to You</h1>
+            <p className="about-description">
+              We are always ready to help by providing the best services for you.
+              We believe a good place to live can make your life better.
+            </p>
+            <ul className="about-list">
+              <li>Best interest rates on the market</li>
+              <li>Prevent unstable prices</li>
+              <li>Best price on the market</li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;import React from "react";
+import { motion } from "framer-motion"; // Import motion from framer-motion
+import "./About.css";
+
+const About = () => {
+  return (
+    <section className="about-wrapper">
+      <div className="innerWidth about-container">
+        <h1 className="about-title">About Us</h1>
+        {/* Page Title */}
+        <motion.h1
+          className="about-page-title"
+          initial={{ y: "-2rem", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 1.5,
+            type: "ease-in-out",
+          }}
+        >
+        </motion.h1>
+
+        <div className="about-content">
+          {/* Left Side: Image with Motion */}
+          <motion.div
+            className="about-image-container"
+            initial={{ x: "-2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              type: "ease-in-out",
+            }}
+          >
+            <img
+              src="./hero-image.png" // Replace with your image path
+              alt="Discover"
+              className="about-image rounded-top"
+            />
+          </motion.div>
+
+          {/* Right Side: Text Content with Motion */}
+          <motion.div
+            className="about-text-container"
+            initial={{ x: "2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              type: "ease-in-out",
+            }}
+          >
+            <h2 className="about-title">Our Value</h2>
+            <h1 className="about-heading">Value We Give to You</h1>
+            <p className="about-description">
+              We are always ready to help by providing the best services for you.
+              We believe a good place to live can make your life better.
+            </p>
+            <ul className="about-list">
+              <li>Best interest rates on the market</li>
+              <li>Prevent unstable prices</li>
+              <li>Best price on the market</li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
+.about-wrapper {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  max-width: 1200px; /* Increased width for better layout */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-image-container {
+  flex: 1;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50% 50% 0 0; /* Creates a rounded top shape */
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+  border: 5px solid #a3a8b1; /* Adds a border with a custom color */
+}
+
+.rounded-top {
+  border-radius: 50% 50% 0 0; /* Creates a rounded top shape */
+  overflow: hidden; /* Ensures the image stays within the rounded shape */
+}
+
+.about-text-container {
+  flex: 1;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f3e72;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.about-list li::before {
+  content: "✔";
+  color: #f39c12;
+  margin-right: 10px;
+}
+
+.about-motion-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Space between the image and the text */
+}
+
+.map-container {
+  margin-top: 30px;
+  width: 100%; /* Full width for landscape style */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1f3e72;
+}
+
+.map-container .leaflet-container {
+  width: 100%; /* Full width */
+  height: 60vh; /* Adjust height for landscape aspect ratio */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.about-page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f3e72;
+  text-align: center;
+  margin: 4rem 0 2rem; /* Adds spacing from the navbar and below */
+}
+
+
+
+import React, { useState } from "react";
+import "./Chatbot.css";
+
+const Chatbot = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState("");
+
+  const toggleChatbot = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const sendMessage = () => {
+    if (!input.trim()) return;
+
+    const newMessage = { user: "You", text: input };
+    setMessages([...messages, newMessage]);
+
+    // Simulate a bot response
+    setTimeout(() => {
+      setMessages((prev) => [
+        ...prev,
+        { user: "Bot", text: "Thank you for your message. How can I help you?" },
+      ]);
+    }, 1000);
+
+    setInput("");
+  };
+
+  return (
+    <div className="chatbot-wrapper">
+      <button className="chatbot-toggle" onClick={toggleChatbot}>
+        Chat with us
+      </button>
+
+      {isOpen && (
+        <div className="chatbot-dialog">
+          <div className="chatbot-header">
+            <h2>Real Estate Chatbot</h2>
+            <button className="close-btn" onClick={toggleChatbot}>
+              ✖
+            </button>
+          </div>
+          <div className="chatbot-messages">
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`message ${msg.user === "You" ? "user" : "bot"}`}
+              >
+                <strong>{msg.user}:</strong> {msg.text}
+              </div>
+            ))}
+          </div>
+          <div className="chatbot-input">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Type your message..."
+            />
+            <button onClick={sendMessage}>Send</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Chatbot;
+
+chatbot.jsx
+
+
+
+
+import React, { Suspense } from "react";
+import "./App.css";
+import Website from "./pages/Website";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Properties from "./pages/Properties/Properties";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+import { ToastContainer } from "react-toastify";
+import Property from "./pages/Property/Property";
+import { use } from "react";
+import About from "./components/AboutUs/About";
+import { useState } from "react";
+import UserDetailContext from "./context/UserDetailContext";
+
+
+function App() {
+
+  const queryClient = new QueryClient();
+  const [userDetails, setUserDetails] = useState({
+    favourites: [],
+    bookings: [],
+    token: null,
+  });
+
+
+
+  return (
+    
+    <UserDetailContext.Provider value={{ userDetails, setUserDetails }}>
+    <QueryClientProvider  client={queryClient}>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {/* Define a path for the Layout */}
+          <Route path="/" element={<Layout />}>
+          <Route path="/about" element={<About />} />
+            {/* Nested routes inside Layout */}
+            <Route index element={<Website />} />
+            <Route path="/properties" >
+            <Route index element={<Properties/>} />
+              <Route path=":propertyId" element={<Property />} />
+            </Route>
+          </Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+    <ToastContainer/>
+    <ReactQueryDevtools initialIsOpen={false}/>
+    </QueryClientProvider>
+    </UserDetailContext.Provider>
+  );
+}
+
+export default App;
+
+
+
+npm install react-slick slick-carousel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+about us page wroking 

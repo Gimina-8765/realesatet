@@ -1,0 +1,210 @@
+/* Section 1: About Us Page General Styles */
+.about-us-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333; /* Set text color */
+  background-color: #fff; /* Remove black background */
+  padding: 2rem;
+}
+
+/* Section 2: About Us Title */
+.about-us-title {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.about-us-title h1 {
+  font-size: 3rem;
+  color: #1f3e72;
+}
+
+.about-us-title .about-us-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section 3: About Us Details */
+.about-us-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.rounded-top-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-info {
+  flex: 2;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-us-info h2 {
+  font-size: 2rem;
+  color: #1f3e72;
+  margin-bottom: 1rem;
+}
+
+.about-us-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-us-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us-info ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-us-info ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1f3e72;
+}
+
+/* Section 4: Customer Reviews */
+.customer-reviews {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.customer-reviews h2 {
+  font-size: 2rem;
+  color: #1f3e72;
+  margin-bottom: 1rem;
+}
+
+.reviews-slider {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem; /* Add padding to the slider container */
+}
+
+.reviews-slider .slick-slide {
+  padding: 0 1rem; /* Add horizontal padding between cards */
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.customer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Rounded image */
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.rating {
+  margin: 0.5rem 0;
+}
+
+.filled-star {
+  color: gold;
+}
+
+.empty-star {
+  color: #ddd;
+}
+
+/* Section 5: Live Map */
+.live-map {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.live-map h2 {
+  font-size: 2rem;
+  color: #1f3e72;
+  margin-bottom: 1rem;
+}
+
+/* Section 6: Search Bar */
+.search-bar-container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.properties-container .search-bar {
+  width: clamp(12rem, 100%, 28rem); /* Responsive width */
+  border-radius: 30px; /* Rounded corners */
+  border: 1px solid rgba(120, 120, 120, 0.374); /* Border with transparency */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.properties-container .search-bar input {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 30px 0 0 30px; /* Rounded left corners */
+}
+
+.properties-container .search-bar .button {
+  border-radius: 0 30px 30px 0; /* Rounded right corners */
+  font-size: 12px;
+  padding: 10px 15px;
+  background-color: #1f3e72;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.properties-container .search-bar .button:hover {
+  background-color: #16325c;
+}
+
+/* Section 7: Footer */
+.about-us-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f3e72;
+  color: white;
+}

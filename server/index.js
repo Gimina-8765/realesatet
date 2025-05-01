@@ -7,6 +7,7 @@ import axios from "axios"; // Import axios for Hugging Face API
 import OpenAI from "openai";
 import userRoute from './routes/userRoute.js';
 import { residencyRoute } from './routes/residencyRoute.js';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 dotenv.config();
 

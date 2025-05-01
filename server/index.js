@@ -3,9 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import axios from "axios";
+import axios from "axios"; // Import axios for Hugging Face API
 import OpenAI from "openai";
-
 import userRoute from './routes/userRoute.js';
 import { residencyRoute } from './routes/residencyRoute.js';
 
@@ -44,7 +43,7 @@ app.post("/api/chat/openai", async (req, res) => {
     const reply = response.choices[0].message.content.trim();
     res.json({ reply });
   } catch (error) {
-    console.error("Error communicating with OpenAI:", error.response?.data || error.message);
+    console.error("Error communicating with OpenAI:", error);
     res.status(500).json({ error: "Failed to process the request" });
   }
 });
@@ -71,7 +70,7 @@ app.post("/api/chat/huggingface", async (req, res) => {
     const reply = response.data?.[0]?.generated_text || "Sorry, I didn't understand that.";
     res.json({ reply });
   } catch (err) {
-    console.error("Error talking to Hugging Face:", err.response?.data || err.message);
+    console.error("Error talking to Hugging Face:", err.message);
     res.status(500).json({ error: "Failed to fetch response from chatbot" });
   }
 });
@@ -80,10 +79,10 @@ app.post("/api/chat/huggingface", async (req, res) => {
 app.use("/api/user", userRoute);
 app.use("/api/residency", residencyRoute);
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
-});
-
-
-// ✅ Export the app for Vercel (do NOT use app.listen)
+// Export the app instead of calling app.listen() (for Vercel serverless function)
 export default app;
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
